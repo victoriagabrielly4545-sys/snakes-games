@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Snake Turquesa</title>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="top-bar">
+
+<span id="score">🍎 0</span>
+<span id="level">🏆 Nível 1</span>
+
+<div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+</div>
+
+<div id="menu" class="menu">
+<button onclick="pauseGame()">Pausar</button>
+<button onclick="resumeGame()">Continuar</button>
+<button onclick="toggleSound()">Som ON/OFF</button>
+<button onclick="restartGame()">Reiniciar</button>
+</div>
+
+<canvas id="game"></canvas>
+<div class="controles">
+
+<button onclick="direction='UP'">⬆️</button>
+
+<div>
+<button onclick="direction='LEFT'">⬅️</button>
+<button onclick="direction='DOWN'">⬇️</button>
+<button onclick="direction='RIGHT'">➡️</button>
+</div>
+
+</div>
+
+<div id="gameOver" class="gameover">
+<h1>GAME OVER</h1>
+<button onclick="restartGame()">Jogar novamente</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
